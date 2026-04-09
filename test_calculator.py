@@ -5,7 +5,7 @@ https://github.com/nickeckerson/lab11-NE-AR.git
 """
 
 import unittest
-from calculator import multiply, divide, logarithm, hypotenuse, square_root
+from calculator import *
 
 
 class TestCalculator(unittest.TestCase):
