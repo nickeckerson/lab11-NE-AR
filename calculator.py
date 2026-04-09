@@ -3,9 +3,32 @@ calculator.py
 - Defines functions used to create a simple calculator
 
 One function per operation, in order.
+
+Partner 1: Nick Eckerson
+Partner 2: Alberto Ramirez-Aguiar
+https://github.com/nickeckerson/lab11-NE-AR.git
+
+
 """
 # First example
-def add(a, b): 
-    pass
+import math
+def add(a, b):
+    return a + b
 
+def sub(a, b):
+    return a - b
+
+def mul(a, b):
+    return a * b
+
+def div(a, b):
+    if a == 0:
+        raise ZeroDivisionError
+    else: return b / a
+
+def log(a, b):
+    return math.log(b, a)
+
+def exp(a, b):
+    return a ** b
 

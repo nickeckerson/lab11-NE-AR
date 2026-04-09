@@ -1,3 +1,9 @@
+"""
+Partner 1: Nick Eckerson
+Partner 2: Alberto Ramirez-Aguiar
+https://github.com/nickeckerson/lab11-NE-AR.git
+"""
+
 import unittest
 from calculator import *
 
