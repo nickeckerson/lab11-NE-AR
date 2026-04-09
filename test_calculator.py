@@ -1,5 +1,4 @@
-"""
-https://github.com/nickeckerson/lab11-NE-AR.git
+""" https://github.com/nickeckerson/lab11-NE-AR.git
 Partner 1: Nick Eckerson
 Partner 2: Alberto Ramirez-Aguiar
 """
@@ -24,22 +23,22 @@ class TestCalculator(unittest.TestCase):
 
     ######## Partner 1
     def test_multiply(self):
-        self.assertEqual(multiply(3, 4), 12)
-        self.assertEqual(multiply(-2, 5), -10)
-        self.assertEqual(multiply(0, 7), 0)
+        self.assertEqual(mul(3, 4), 12)
+        self.assertEqual(mul(-2, 5), -10)
+        self.assertEqual(mul(0, 7), 0)
 
     def test_divide(self):
-        self.assertEqual(divide(2, 10), 5)
-        self.assertEqual(divide(-2, 10), -5)
+        self.assertEqual(div(10, 2), 5)
+        self.assertEqual(div(10, -2), -5)
         with self.assertRaises(ZeroDivisionError):
-            divide(0, 10)
+            div(10, 0)
 
 
     ######## Partner 2
     def test_divide_by_zero(self): # 1 assertion
     #     # call division function inside, example:
           with self.assertRaises(ZeroDivisionError):
-              divide(0, 5)
+              div(0, 5)
     #     fill in code
 
     def test_logarithm(self): # 3 assertions
@@ -49,7 +48,8 @@ class TestCalculator(unittest.TestCase):
 
 
     def test_log_invalid_base(self): # 1 assertion
-        logarithm(10, 0)
+        with self.assertRaises(ValueError):
+            logarithm(10, 0)
 
     # ##########################
     
