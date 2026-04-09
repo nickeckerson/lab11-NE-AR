@@ -18,10 +18,10 @@ def add(a, b):
 def subtract(a, b):
     return a - b
 
-def multiply(a, b):
+def mul(a, b):
     return a * b
 
-def divide(a, b):
+def div(a, b):
     if a == 0:
         raise ZeroDivisionError("You cannot divide by zero")
     else: return a / b
@@ -31,5 +31,5 @@ def logarithm(a, b):
         raise ValueError("Invalid logarithm input")
     return math.log(b, a)
 
-def exponent(a, b):
+def exp(a, b):
     return a ** b
